@@ -1,19 +1,27 @@
 <template>
-  <nav-bar></nav-bar>
-  <router-link to="/home">Home</router-link>
-  <router-link to="/about">About</router-link>
-  <router-link to="/services">Services</router-link>
+  <!-- NavBar-->
+  <custom-navbar></custom-navbar>
+
+  <!-- Home-->
+  <router-link to="/"></router-link>
+
+  <!-- Footer-->
+  <footer-view></footer-view>
   <router-view></router-view>
 </template>
 
 <script>
-  import NavBar from "./components/NavBar.vue";
+  import CustomNavbar from "./components/CustomNavbar.vue";
+  import FooterView from "./components/FooterView.vue";
   export default {
       name: "HomePage",
       components: {
-          NavBar
+          CustomNavbar,
+          FooterView
       }
   }
+
+  
 
   
 </script>
